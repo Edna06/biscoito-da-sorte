@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 52.6%;
+}
+
+body {
+  font-size: 1.6rem;
+  background:  linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+main{
+  background-color: #ffff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.screen-01,
+.screen-02{
+  margin: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+h1 {
+  color: #34355B;
+  
+}
+
+p {
+
+}
+
+img {
+
+}
+
+
+
+.hide {
+  display: none;
+}
