@@ -4,7 +4,11 @@
 }
 
 :root {
-  font-size: 52.6%;
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
 }
 
 body {
@@ -27,28 +31,154 @@ main{
 
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
   border-radius: 5px;
+  animation: screenAnimation 3s backwards;
 }
 
-.screen-01,
-.screen-02{
+@keyframes screenAnimation {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+ 
+  100% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.screen-01 {
   margin: 4.8rem 6.4rem 6.4rem 6.4rem;
+
 }
 
 h1 {
   color: #34355B;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.screen-01 h1 {
+  width: 25.8rem; 
+  margin-bottom: 1.4rem;
+}
+
+.screen-01 p {
+color: #34355B;
+
+font-family: 'DM Sans', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+line-height: 2rem;
+
+margin-bottom: 2rem;
+}
+
+.screen-01 img {
+  width: 24.8rem;
+  height: 19.2rem;
+}
+
+.screen-01 img:hover {
+cursor: pointer;
+animation: loading 0.7s infinite;
+}
+
+@keyframes loading {
+
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+	50% {
+		transform: rotate(5deg);
+	}
+  75% {
+    transform: rotate(-5deg);
+  }
+	100% { 
+		transform: rotate(5deg);
+  }
+}
+
+.screen-02 {
+  margin: 4.8rem 6.4rem;
+
+}
+
+.screen-02 h1 {
+  width: 29.7rem;
+  line-height: 29px;
+
+
+  font-size: 2.4rem;
+  margin-bottom: 1.7rem;
+}
+
+.screen-02 .message{
+  padding: 1rem;
+  gap: 1rem;
   
+  width: 29.3rem;
+  
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  
+  margin-bottom: 1.7rem;
+  animation: phraseAnimation 5s;
 }
 
-p {
+.screen-02 p {
+
+font-family: 'Dancing Script', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 2.4rem;
+line-height: 2.9rem;
+color: #000000;
+
 
 }
 
-img {
+@keyframes phraseAnimation {
+
+ 0% {
+   transform: scale(0);
+ }
+
+100% {
+  transform: scale(1);
+}
 
 }
 
+.screen-02 img {
+  display: block;
+}
 
+button {
+  margin-top: 1.7rem;
+  border: none;
+  border-radius: 0.4rem;
+  width: 17.4rem;
+  height: 5.2rem;
+  padding: 1.6rem;
 
-.hide {
-  display: none;
+  margin-right: 0;
+  background: #FF9500;
+  color: #ffff;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 20px;
+
+  transition: all 1s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  filter: brightness(80%);
 }
